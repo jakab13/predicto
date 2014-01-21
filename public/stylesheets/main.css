@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font: bold 18px Calibri;
+	text-shadow: 0px 0px 5px rgb(250,164,26);
+	opacity: 0.8;
+}
+
+h2 {
+	font: bold 14px Calibri;
+}
+
+header,section,footer,aside,article,nav,hgroup {
+	display: block;
+}
+
+body {
+	width: 100%;
+	background-image: url('/images/paperBG.jpg');
+}
+
+#bigWrapper {
+	width: 1000px;
+	margin:auto;
+	display: block;
+}
+
+#topHeader {
+	background: -webkit-gradient(linear, left bottom,left top,color-stop(0, rgb(244,120,32)),
+	color-stop(0.95, rgb(255,176,48)), color-stop(1, rgb(250,164,26)));
+	border: 1px solid grey;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+	margin-bottom:100px;
+}
+
+.input-wrapper {
+	margin: 4px;
+	position: relative;
+	float: left;
+	padding: 5px;
+	font: bold 20px Calibri;
+}
+
+input[type="text"]{
+	height: 30px;
+	font: Calibri;
+	padding: 4px;
+}
+
+#prediction{
+	width: 400px;
+}
+
+#until{
+	width: 100px;
+}
+
+#slider{
+	width:100px;
+}
+
+#submit_prediction {
+	background: -webkit-gradient(linear, left top, right bottom, from(#faa51a), to(#f47a20));
+	height: 30px;
+	font: Calibri;
+	padding: 0px 10px 0px 10px;
+	
+}
+
+#feedback{
+	clear: sboth;
+	margin: 100px 100px 100px 100px;
+	font: Calibri;
+
+}
+
+#footer {
+	text-align: center;
+	padding: 5px;
+	border-top: 1px solid;
+	margin-top: 100px;
+	clear: both;
+	text-font: Calibri;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+div.ui-datepicker{font-size:10px;}

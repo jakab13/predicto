@@ -1,0 +1,24 @@
+{
+  "name": "application-name",
+  "version": "0.0.1-6",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "less-middleware": "*",
+    "mongoose": "3.8.1",
+    "ejs": "latest",
+    "passport": "latest",
+    "passport-twitter": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  },
+  "subdomain": "predicto",
+  "engines": {
+    "node": "0.10.x"
+  }
+}

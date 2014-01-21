@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1> All users </h1>
+
+<ul>
+
+<% for(var i=0; i<users.length; i++) {%>
+   <li> <a href="http://www.twitter.com/<%= users[i].username%>" target="_blank">@<%= users[i].username%></a> 
+   	(<%= users[i].name %>) </li>
+<% } %>
+
+</ul>
+
+</body>
+</html>

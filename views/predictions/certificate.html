@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Certificate</title>
+
+<script src="javascript/jquery-1.10.2.min.js"></script>
+<script src="javascript/jquery-ui-1.10.3.custom.js"></script>
+<!-- <script src="js/certificateScript.js"></script> -->
+
+<link rel="stylesheet" href="../stylesheets/certificate.css">
+<!-- <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.css"> -->
+
+<style type="text/css" charset="utf-8"></style>
+
+</head>
+
+<body onload="getPrediction()">
+
+    <div id="bigWrapper">
+    
+    <div id="certificate">
+    	<h3>Congratulations!</h6>
+    	<h6>You are a Psychic</h2>
+    </div>
+
+    <div id="theContent">
+
+		On <%= prediction.created.toDateString() %> 
+		at <%= prediction.created.toTimeString() %> <br><br>
+		<%= prediction.name %> registered the following Prediction: <br><br>
+
+		"<%= prediction.prediction %>"<br><br>
+
+		The date on which this prediction either comes true, or is proved wrong is
+		<%= prediction.deadline.toDateString() %>.<br><br>
+
+	</div>
+
+		Do you agree with this Prediction?
+		<input id="submit_support" name="submit" value="Support" type="submit"><br><br>
+
+Do you think <%= prediction.name %> is wrong about this?
+File a counter prediction and you can be the one with the Prediction Power 
+<a href="/../home">
+    <input id="submit_prediction" name="submit" value="Counter Predict" type="button">
+</a>
+<br><br>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet your prediction</a>
+
+    </div>
+
+<a id="tweetB" href="https://twitter.com/share" class="twitter-share-button" data-url="" data-text="I just made a prediction, check it out">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</body>
+
+
+</html>

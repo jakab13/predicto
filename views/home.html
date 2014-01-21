@@ -1,0 +1,76 @@
+<!DOCTYPE html">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Predicto</title>
+
+		<!-- <link rel="stylesheet" href="stylesheets/main.css" /> -->
+		<link rel="stylesheet" href="stylesheets/smoothness/jquery-ui-1.10.3.custom.css" />
+
+		<link rel="stylesheet" href="stylesheets/index.css">
+		<link rel="stylesheet" href="stylesheets/jquery-ui-1.10.3.custom.css">
+
+		<script src='javascripts/jQuery/jquery-1.9.1.js'></script>
+		<script src='javascripts/jQuery/jquery-ui-1.10.3.custom.js'></script>
+		<script src='javascripts/script.js'></script>
+
+	</head>
+
+	<body onload="startTime()">
+
+		<div id="bigWrapper">
+
+			<div id="signup-button">
+				Hi, <%= user.name %>
+			</div>
+
+			<div id="check-predictions">
+				<a href="/predictions">Check predictions</a>
+			</div>
+
+			<div id="flexSpace"></div>
+			<div id="topHeader" class="headerOpacity">
+				<strong>Predicto</strong>
+			</div>
+
+			<div id="formContainer">
+
+				<form action="/predictions" method="post" id="search_form">
+
+					<div id="runningClock"></div>
+
+					<input class="smallFormElement" autocomplete="off" id="name" name="name" value="@<%= user.username %>" type="text" />
+
+					<input class="smallFormElement" autocomplete="off" id="prediction" name="prediction" placeholder="What do you predict for the future?" type="text"/>
+
+					<input class="smallFormElement" type="text" id="deadline" placeholder="Deadline" name="deadline"/>
+
+					<button type="submit" class="smallFormElement" id="submit_prediction" name="submit" value="Predict" >
+						Predict
+					</button>
+
+					<!-- <div id="showButton" onClick="extendFields(this)">
+						More Fields
+					</div>
+
+					<div id="confidenceContainer" class="additionField">
+						Confidence: 0
+						<input id="confidenceSlider" type="range" name="points" min="1" max="100">
+						100
+					</div>
+
+					<input id="reasonsBox" class="additionField extraBoxes" type="text" placeholder="What are your reasons?" />
+
+					<input id="mentionsBox" class="additionField extraBoxes" type="text" placeholder="Who gets a mention on twitter?" />
+
+					<input id="linkBox" class="additionField extraBoxes" type="text" placeholder="Relevant links?" onblur="checkLink(this)"/> -->
+				</form>
+
+			</div>
+
+			<footer id="footer">
+				Copyright @ 2013 Predicto
+			</footer>
+
+	</body>
+</html>

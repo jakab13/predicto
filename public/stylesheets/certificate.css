@@ -1,0 +1,37 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/tweed.png");
+	font-family: Calibri;
+	margin: 0 0;
+	color: white;
+	text-align: center;
+}
+
+h3{
+	margin-bottom: 20px;
+}
+
+h6{
+	margin-bottom: 20px;
+}
+
+#bigWrapper{
+	max-width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#certificate{
+	width: 100%;
+	font-size: 6em;	color: white;
+	text-align: center;
+}
+
+#theContent{
+	max-width: 800px;
+	width: 100%;
+	background: black;
+	border-radius: 3px;
+	margin: 30px auto;
+}

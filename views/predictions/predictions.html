@@ -1,0 +1,44 @@
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Predictions</title>
+
+		<link rel="stylesheet" href="stylesheets/predictions.css">
+
+		<script src="javasripts/jquery-1.10.2.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id='predictionBox'>
+
+			<% for(var i=0; i
+			<predictions.length; i++) {%>
+				<div class="indivPrediction" id="model">
+					<div class="author">
+						<a href="http://www.twitter.com/<%= predictions[i].name %>" target="_blank"><%= predictions[i].name %></a>
+					</div>
+					<div class="prediction">
+						<%= predictions[i].prediction%>
+					</div>
+					<div class="statistics">
+						<div class="statBox supports">
+							0
+						</div>
+						Supporters
+						<div class="statBox counterPred">
+							0
+						</div>
+						Counter-Predictions
+						<input type="button" value="Check Certificate" onclick="location.href='/predictions/<%= predictions[i].id %>'">
+					</div>
+				</div>
+				<% } %>
+
+		</div>
+
+	</body>
+
+</html>
